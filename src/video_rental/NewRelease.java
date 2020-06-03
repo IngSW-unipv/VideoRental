@@ -8,7 +8,7 @@ public class NewRelease extends Price {
 	}
 
 	@Override
-	double getFrequentPoints(int daysRented) {
+	int getFrequentPoints(int daysRented) {
 		return 2;
 	}
 

@@ -11,7 +11,7 @@ public class RegularPrice extends Price {
 	}
 
 	@Override
-	double getFrequentPoints(int daysRented) {
+	int getFrequentPoints(int daysRented) {
 		return 1;
 	}
 
