@@ -7,5 +7,4 @@ public class VideoRental {
 		Movie movie2 = new Movie("Fnding Nemo", Movie.CHILDREN);
 		Movie movie3 = new Movie("Star Wars XXIII", Movie.NEW_RELEASE);
 	}
-
 }
