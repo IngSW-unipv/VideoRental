@@ -3,8 +3,12 @@ package video_rental;
 public class VideoRental {
 
 	public static void main(String[] args) {
-		Movie movie1 = new Movie("Shining", Movie.REGULAR);
-		Movie movie2 = new Movie("Fnding Nemo", Movie.CHILDREN);
-		Movie movie3 = new Movie("Star Wars XXIII", Movie.NEW_RELEASE);
+		Customer customer = new Customer("Donald Duck");
+		customer.addRental(new Rental(new Movie("The GodFather", Movie.REGULAR), 3));
+		customer.addRental(new Rental(new Movie("Finding Nemo", Movie.CHILDREN), 4));
+		customer.addRental(new Rental(new Movie("Star Wars XXIII", Movie.NEW_RELEASE), 2));
+		
+		String stmt = customer.statement();
+		System.out.println(stmt);
 	}
 }
